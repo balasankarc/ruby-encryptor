@@ -3,18 +3,19 @@ Section: ruby
 Priority: optional
 Maintainer: Debian Ruby Extras Maintainers <pkg-ruby-extras-maintainers@lists.alioth.debian.org>
 Uploaders: Balasankar C <balasankarc@autistici.org>
-Build-Depends: debhelper (>= 7.0.50~), gem2deb
-Standards-Version: 3.9.5
+Build-Depends: debhelper (>= 7.0.50~), gem2deb, rake, ruby-rspec
+Standards-Version: 3.9.6
 Vcs-Git: git://anonscm.debian.org/pkg-ruby-extras/ruby-encryptor.git
 Vcs-Browser: http://anonscm.debian.org/gitweb/?p=pkg-ruby-extras/ruby-encryptor.git;a=summary
 Homepage: http://github.com/attr-encrypted/encryptor
-Testsuite: autopkgtest
+Testsuite: autopkgtest-pkg-ruby
 XS-Ruby-Versions: all
 
 Package: ruby-encryptor
 Architecture: all
 XB-Ruby-Versions: ${ruby:Versions}
-Depends: ${shlibs:Depends}, ${misc:Depends}, ruby | ruby-interpreter
-# rake (= 0.9.2.2, development), simplecov (>= 0, development), simplecov-rcov (>= 0, development)
-Description: A simple wrapper for the standard ruby OpenSSL library
- A simple wrapper for the standard ruby OpenSSL library to encrypt and decrypt strings
+Depends: ruby | ruby-interpreter, ${misc:Depends}, ${shlibs:Depends}
+Description: Wrapper for the standard ruby OpenSSL library
+ A simple wrapper for the standard ruby OpenSSL library to encrypt and decrypt
+ strings. Intended to be used by a future version of attr_encrypted gem to
+ easily encrypt/decrypt attributes in any Ruby class or model.

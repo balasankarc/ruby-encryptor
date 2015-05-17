@@ -1,5 +1,5 @@
-ruby-encryptor (1.3.0-1) UNRELEASED; urgency=medium
+ruby-encryptor (1.3.0-1) unstable; urgency=medium
 
-  * Initial release (Closes: #nnnn)
+  * Initial release (Closes: #785558)
 
- -- Balasankar C <balasankarc@autistici.org>  Mon, 18 May 2015 01:14:55 +0530
+ -- Balasankar C <balasankarc@autistici.org>  Sun, 17 May 2015 23:11:24 +0530
