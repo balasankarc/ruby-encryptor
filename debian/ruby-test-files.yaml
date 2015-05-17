@@ -1,0 +1,6 @@
+---
+- test/compatibility_test.rb
+- test/test_helper.rb
+- test/openssl_helper.rb
+- test/legacy_encryptor_test.rb
+- test/encryptor_test.rb
