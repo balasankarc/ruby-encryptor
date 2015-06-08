@@ -15,7 +15,7 @@ Package: ruby-encryptor
 Architecture: all
 XB-Ruby-Versions: ${ruby:Versions}
 Depends: ruby | ruby-interpreter, ${misc:Depends}, ${shlibs:Depends}
-Description: Wrapper for the standard ruby OpenSSL library
+Description: wrapper for the standard Ruby OpenSSL library
  A simple wrapper for the standard ruby OpenSSL library to encrypt and decrypt
- strings. Intended to be used by a future version of attr_encrypted gem to
- easily encrypt/decrypt attributes in any Ruby class or model.
+ strings. Intended to be used along with attr_encrypted gem to easily encrypt/
+ decrypt attributes in any class or model.
